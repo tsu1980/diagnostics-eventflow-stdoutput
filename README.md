@@ -3,6 +3,12 @@
 ## Introduction
 This is a custom health reporter for [Microsoft.Diagnostics.EventFlow] to write to the console window.
 
+The general flow of the process:
+
+1. If the report level is less than `minReportLevel` value, skip the process.
+1. Construct message string by corresponding to `messageFormat` value.
+1. Output message string to STDOUT. If `outputToStdError` is true, output to STDERR instead of STDOUT.
+
 ## Getting Started
 
 To quickly get started, you can create a simple console application in VisualStudio as described below or just download and run [PlayGround](PlayGround) project.
