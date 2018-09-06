@@ -1,0 +1,27 @@
+{
+  "inputs": [
+    {
+      "type": "Trace",
+      "traceLevel": "Warning"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "StdOutput"
+    }
+  ],
+  "healthReporter": {
+    "type": "StdOutputHealthReporter",
+    "minReportLevel": "Healthy",
+    "outputToStdError": "false",
+    "messageFormat": "[HR] ${Timestamp} ${Context} [${Level}]: ${Message}"
+  },
+  "schemaVersion": "2016-08-11",
+  "extensions": [
+    {
+      "category": "healthReporter",
+      "type": "StdOutputHealthReporter",
+      "qualifiedTypeName": "Mamemaki.EventFlow.HealthReporters.StdOutput.StdOutputHealthReporter, Mamemaki.EventFlow.HealthReporters.StdOutput"
+    }
+  ]
+}
