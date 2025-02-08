@@ -75,6 +75,7 @@ Parameter  | Description | Required(default)
 ------------- | ------------- | -------------
 `type` | Type of health reporter. It must be set `StdOutputHealthReporter`. | Yes(`StdOutputHealthReporter`)
 `minReportLevel` | Specifies the collection report level. Report traces with equal or higher severity than specified are collected. For example, if Warning is specified, then Problem, and Warning traces are collected. Default is `Problem`. Allowed values are `Healthy`, `Warning`, or `Problem`. | No(`Problem`)
+`suppressEmptyMessage` | If set true, skip report if message is empty. | No(`false`)
 `outputToStdError` | If set true, write to stderr. If false, write to stdout. | No(`false`)
 `messageFormat` | Format of the output message. For more details, see [Message format](#message-format) | No(`${TimeStamp} ${Context} [${Level}] ${Message}`)
 
