@@ -5,21 +5,21 @@
     <PackageTags>Microsoft Diagnostics EventFlow HealthReporters console stdout stderr</PackageTags>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <PackageProjectUrl>https://github.com/tsu1980/diagnostics-eventflow-stdoutput</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Tsuyoshi Sumiyoshi</Authors>
+    <Authors>Mamemaki, Inc</Authors>
     <Description>A custom health reporter for Microsoft.Diagnostics.EventFlow to write to the console window</Description>
     <PackageReleaseNotes>Initial version</PackageReleaseNotes>
     <PackageLicenseUrl>https://github.com/tsu1980/diagnostics-eventflow-stdoutput/blob/master/LICENSE.txt</PackageLicenseUrl>
     <PackageIconUrl>https://github.com/tsu1980/diagnostics-eventflow-stdoutput/raw/master/images/logo.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/tsu1980/diagnostics-eventflow-stdoutput</RepositoryUrl>
-    <Copyright>Copyright (c) 2018, Tsuyoshi Sumiyoshi and collaborators. All rights reserved</Copyright>
-    <Company />
+    <Copyright>Copyright (c) 2018, Mamemaki, Inc and collaborators. All rights reserved</Copyright>
+    <Company>$(Authors)</Company>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Diagnostics.EventFlow.Core" Version="1.4.4" />
+    <PackageReference Include="Microsoft.Diagnostics.EventFlow.Core" Version="1.13.1" />
   </ItemGroup>
 
 </Project>
