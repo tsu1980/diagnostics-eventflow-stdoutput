@@ -10,13 +10,26 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Mamemaki, Inc</Authors>
     <Description>A custom health reporter for Microsoft.Diagnostics.EventFlow to write to the console window</Description>
-    <PackageReleaseNotes>Initial version</PackageReleaseNotes>
-    <PackageLicenseUrl>https://github.com/tsu1980/diagnostics-eventflow-stdoutput/blob/master/LICENSE.txt</PackageLicenseUrl>
-    <PackageIconUrl>https://github.com/tsu1980/diagnostics-eventflow-stdoutput/raw/master/images/logo.png</PackageIconUrl>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/tsu1980/diagnostics-eventflow-stdoutput</RepositoryUrl>
     <Copyright>Copyright (c) 2018, Mamemaki, Inc and collaborators. All rights reserved</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
     <Company>$(Authors)</Company>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\images\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Diagnostics.EventFlow.Core" Version="1.13.1" />
