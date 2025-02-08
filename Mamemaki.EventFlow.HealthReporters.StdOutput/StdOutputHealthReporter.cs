@@ -90,6 +90,11 @@ namespace Mamemaki.EventFlow.HealthReporters.StdOutput
                 return;
             }
 
+            if (Configuration.SuppressEmptyMessage && string.IsNullOrEmpty(text))
+            {
+                return;
+            }
+
             string message = "";
             foreach (var token in formatTokens)
             {
